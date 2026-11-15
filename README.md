@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo/qualir-horizontal.png" alt="QualiR — Análise qualitativa colaborativa" width="520">
+</p>
+
 # QualiR
 
 **Análise qualitativa de textos e transcrições em R, para trabalhar sozinho ou em equipe.**
@@ -70,9 +74,14 @@ R/                     código (projetos, banco de dados, importação, análise
 www/                   estilo (CSS) e interações (JavaScript)
 exemplos/              duas transcrições fictícias para teste
 docs/img/              imagens do manual
+docs/logo/             logomarca (SVG e PNG, em vários tamanhos)
 projetos/              seus projetos (criada automaticamente; não vai para o GitHub)
 MANUAL.md              manual de uso
 ```
+
+## Logomarca
+
+Os arquivos da logomarca estão em [`docs/logo`](docs/logo): o selo completo (`qualir-selo`), o símbolo sem texto (`qualir-icone`), uma versão simplificada para tamanhos pequenos (`qualir-icone-simples`) e a versão horizontal para documentos e apresentações (`qualir-horizontal`, também em fundo escuro). Prefira os PNG quando o texto do selo precisar aparecer exatamente igual (os SVG com texto dependem das fontes Montserrat e Inter instaladas).
 
 ## Licença
 

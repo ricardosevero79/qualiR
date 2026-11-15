@@ -27,8 +27,8 @@ ui_login <- function(projetos, selecionado = NULL) {
   tem <- nrow(projetos) > 0
   div(class = "login-wrap",
     div(class = "login-card",
-      div(class = "login-logo", icon("diagram-project"), tags$span("QualiR")),
-      div(class = "login-sub", "Análise qualitativa colaborativa"),
+      div(class = "login-logo", tags$img(src = "img/qualir-selo-512.png", alt = "QualiR — Análise qualitativa colaborativa",
+                                         width = "150", height = "150")),
       if (tem) tagList(
         selectInput("login_proj", "Projeto", setNames(projetos$id, projetos$name),
                     selected = if (!is.null(selecionado) && selecionado %in% projetos$id) selecionado else projetos$id[1],
@@ -53,7 +53,8 @@ ui_principal <- function(user, projeto) {
     # ======================= BARRA LATERAL ==================================
     div(id = "sidebar",
       div(class = "sb-top",
-          div(class = "sb-logo", icon("diagram-project"), tags$b("QualiR"),
+          div(class = "sb-logo", tags$img(src = "img/qualir-icone-simples.svg", alt = "", width = "26", height = "26", class = "sb-icon"),
+              tags$b(HTML('Quali<span class="sb-r">R</span>')),
               tags$a(id = "sb-toggle", href = "#", title = "Recolher painel", icon("angle-left"))),
           div(class = "sb-proj", id = "tb-proj", projeto)),
       div(class = "sb-scroll",
@@ -205,6 +206,8 @@ app_ui <- function() {
                             "font-size-base" = "0.86rem"),
     title = "QualiR",
     tags$head(
+      tags$link(rel = "icon", type = "image/png", href = "img/qualir-icone-simples-32.png"),
+      tags$link(rel = "apple-touch-icon", href = "img/qualir-icone-192.png"),
       tags$link(rel = "stylesheet", href = "qualir.css"),
       tags$script(src = "qualir.js")
     ),

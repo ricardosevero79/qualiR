@@ -13,7 +13,8 @@ a{color:#2F64B5;}
 .login-wrap{height:100vh;display:flex;align-items:center;justify-content:center;
   background:linear-gradient(160deg,#2A6BC0 0%,#174A85 50%,#0B1A2E 100%);}
 .login-card{background:#fff;width:360px;padding:30px 32px;border-radius:6px;box-shadow:0 12px 40px rgba(0,0,0,.35);}
-.login-logo{font-size:28px;font-weight:600;color:var(--qr-main);display:flex;gap:10px;align-items:center;}
+.login-logo{display:flex;justify-content:center;margin:-6px 0 14px;}
+.login-logo img{display:block;filter:drop-shadow(0 4px 10px rgba(13,31,56,.25));}
 .login-sub{color:var(--qr-muted);margin-bottom:14px;}
 .login-proj{background:var(--qr-light);padding:6px 10px;border-radius:4px;margin-bottom:14px;font-weight:600;}
 .login-msg{color:#C0392B;margin-top:10px;min-height:20px;}
@@ -28,7 +29,10 @@ a{color:#2F64B5;}
 #sidebar.collapsed{width:44px;flex-basis:44px;}
 #sidebar.collapsed .sb-scroll,#sidebar.collapsed .sb-proj,#sidebar.collapsed .sb-user,#sidebar.collapsed .sb-logo b{display:none;}
 .sb-top{padding:8px 12px 10px;border-bottom:1px solid rgba(255,255,255,.18);}
-.sb-logo{display:flex;align-items:center;gap:8px;font-size:15px;}
+.sb-logo{display:flex;align-items:center;gap:8px;font-size:17px;}
+.sb-logo b{font-family:Montserrat,"Segoe UI",system-ui,sans-serif;font-weight:900;letter-spacing:-.02em;}
+.sb-logo .sb-r{color:#9CC4F2;}
+.sb-icon{flex:0 0 26px;border-radius:50%;}
 .sb-logo #sb-toggle{margin-left:auto;color:#fff;opacity:.8;text-decoration:none;}
 #sidebar.collapsed #sb-toggle i{transform:rotate(180deg);}
 .sb-proj{font-size:12.5px;opacity:.9;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
