@@ -1,0 +1,21 @@
+# ---- NUNCA enviar dados de pesquisa para o GitHub ----
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.db
+backups/
+dados/
+projetos/
+
+# ---- arquivos do R/RStudio ----
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+rsconnect/
+
+# ---- sistema ----
+.DS_Store
+Thumbs.db
+desktop.ini
